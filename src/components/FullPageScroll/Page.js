@@ -4,7 +4,7 @@ export default function Page(props) {
 
   let pageStyle = {
     height: "100vh",
-    width: "100vw",
+    width: "100%",
     ...cleanedStyle,
   };
 
