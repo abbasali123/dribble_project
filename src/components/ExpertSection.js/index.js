@@ -158,7 +158,7 @@ function ExpertSection() {
       </div>
 
       <div style={{ marginTop: 200, fontSize:"80px", padding:0, fontWeight:"lighter" }}> 
-        <img src={"circle.png"} alt="circle"/> <span>Our</span>
+        <img src={"circle.svg"} alt="circle"/> <span>Our</span>
         <p style={{ margin: "0 0 0 90px" }}>experts</p>
         <p style={{ margin: "0 0 0 90px" }}>say</p>
       </div>
