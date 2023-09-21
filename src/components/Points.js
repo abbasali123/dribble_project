@@ -10,7 +10,7 @@ function Points({ description }) {
       }}
     >
       <div className="circle-img">
-        <img src="circle.png" height="55px" />
+        <img src="circle.svg" height="55px" />
       </div>
       <p
         style={{ margin: "20px 0 80px 5px" }}

@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Services from "./components/Services";
 import ExpertSection from "./components/ExpertSection.js";
+import Fund from "./components/Fund";
+import Products from "./components/Products";
 
 function App() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -24,7 +26,7 @@ function App() {
     };
   }, []);
 
-  const sections = [<Banner />, <Services />, <ExpertSection />];
+  const sections = [<Banner />, <Services />, <ExpertSection />,<Fund/> ,<Products/>];
 
   return (
     <PageScroller style={{ display: "flex", flexDirection: "column" }}>

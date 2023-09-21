@@ -188,12 +188,6 @@ p {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swiper-slide img {
@@ -209,4 +203,19 @@ p {
 .circle-img {
   border-radius: 100%;
   overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  background-color: #2d4450 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 600px !important;
 }
