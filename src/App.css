@@ -176,12 +176,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swiper-slide img {
@@ -190,4 +185,18 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.swiper-pagination-bullet {
+  background-color: #2D4450 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFFFFF !important;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  top: 600px !important
+}
+
+
 
