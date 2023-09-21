@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import "./expertSection.scss";
 
 const slides = [
   {
@@ -64,17 +65,8 @@ const slides = [
 
 function ExpertSection() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flex: 1,
-        background: "#0B0F17",
-        height: "100vh",
-        color: "white",
-        flexDirection: "row",
-      }}
-    >
-      <div style={{ width: "50%", margin: "50px 30px" }}>
+    <div className="Expert-Container">
+      <div className="swiper-box">
         <Swiper
           spaceBetween={30}
           pagination={{
@@ -87,68 +79,19 @@ function ExpertSection() {
             const { description, image, subTitle, title } = slide || {};
             return (
               <SwiperSlide>
-                <div
-                  style={{
-                    background: "#1f283d",
-                    width: "700px",
-                    height: "500px",
-                    margin: "70px 10px 10px 80px",
-                    borderRadius: "30px",
-                    display: "flex",
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <div>
-                    <img
-                      src={image}
-                      alt={title}
-                      style={{
-                        width: "200px",
-                        height: "400px",
-                        objectFit: "cover",
-                        margin: "50px",
-                        borderRadius: "100px",
-                      }}
-                    />
+                <div className="swipper-inner-box ">
+                  <div className="img-box">
+                    <img src={image} alt={title} />
                   </div>
 
-                  <div
-                    style={{
-                      marginTop: 40,
-                      display: "flex",
-                      alignItems: "flex-start",
-                      flexDirection: "column",
-                    }}
-                  >
+                  <div className="swiper-heading">
                     <h2>{title}</h2>
-                    <p
-                      style={{ margin: 0, fontSize: "12px", color: "#596D95" }}
-                    >
-                      {subTitle}
-                    </p>
-                    <p
-                      style={{
-                        fontSize: "12px",
-                        textAlign: "left",
-                        marginRight: 100,
-                        color: "#B1B2B6",
-                      }}
-                    >
-                      {description}
-                    </p>
+                    <p className="job-title">{subTitle}</p>
+                    <p className="description">{description}</p>
 
-                    <div
-                      style={{
-                        color: "#070910",
-                        background: "#83D8E8",
-                        padding: "10px 40px",
-                        margin: "50px 0 0px 30px",
-                        fontSize: "12px",
-                        borderRadius:"30px"
-                      }}
-                    >
+                    <button className="GetNotificationBtn">
                       Get a consultation
-                    </div>
+                    </button>
                   </div>
                 </div>
               </SwiperSlide>
@@ -157,10 +100,10 @@ function ExpertSection() {
         </Swiper>
       </div>
 
-      <div style={{ marginTop: 200, fontSize:"80px", padding:0, fontWeight:"lighter" }}> 
-        <img src={"circle.svg"} alt="circle"/> <span>Our</span>
-        <p style={{ margin: "0 0 0 90px" }}>experts</p>
-        <p style={{ margin: "0 0 0 90px" }}>say</p>
+      <div className="heading-box">
+        <img src={"circle.svg"} alt="circle" />
+
+        <h3 className="heading">Our experts say</h3>
       </div>
     </div>
   );
