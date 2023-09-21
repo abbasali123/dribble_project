@@ -1,30 +1,33 @@
 import React from "react";
+import "./service.scss";
 
 function Services() {
   const services = [
     {
       image: "home.jpeg",
       title: "Home Insurance",
-      width: "500px",
+      width: "50%",
       height: "400px",
     },
     {
       image: "beachRing.jpeg",
       title: "",
-      width: "180px",
+      width: "20%",
       height: "400px",
       borderRadius: "85px",
     },
     {
       image: "",
       title: "",
-      width: "120px",
+      width: "30%",
       height: "300px",
     },
+  ];
+  const services2 = [
     {
       image: "vehicle.jpeg",
       title: "Vehicle Damage",
-      width: "300px",
+      width: "30%",
       height: "300px",
     },
     {
@@ -40,48 +43,24 @@ function Services() {
       height: "300px",
     },
   ];
+
   return (
-    <div
-      style={{
-        display: "flex",
-        flex: 1,
-        background: "linear-gradient(#1f283d, #0B0F17)",
-        height: "100vh",
-        color: "white",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          gap: 10,
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-          flexWrap: "wrap",
-          margin:"100px 0 40px 40px"
-        }}
-      >
+    <div className="container-choice">
+      <div className="container-choice-top">
         {services.map((service) => {
           const { image, title, height, width, borderRadius } = service || {};
           if (image) {
             return (
               <div
                 style={{
-                  position: "relative",
-                  textAlign: "center",
-                  color: "white",
+                  width: width,
+                  height: "100%",
+                  borderRadius: borderRadius ? borderRadius : "40px",
+                  overflow: "hidden",
                 }}
+                className="img-box"
               >
-                <img
-                  src={image}
-                  width={width}
-                  height={height}
-                  alt={title}
-                  style={{
-                    borderRadius: borderRadius ? borderRadius : "30px",
-                    objectFit: "cover",
-                  }}
-                />
+                <img src={image} alt={title} />
                 {title && (
                   <span
                     style={{
@@ -102,18 +81,7 @@ function Services() {
           }
 
           return (
-            <div
-              style={{
-                background: "#0C1E30",
-                width: "300px",
-                height: "370px",
-                color: "white",
-                borderRadius: "30px",
-                position: "relative",
-                textAlign: "center",
-                padding:"20px"
-              }}
-            >
+            <div className="best-choice-box">
               <h1>Best Choice</h1>
               <p>
                 Not all insurance are the same. That's why agency knows that
@@ -127,14 +95,47 @@ function Services() {
                   position: "absolute",
                   bottom: "15px",
                   left: "16px",
-                  borderRadius:"30px",
-                  width:"250px"
+                  borderRadius: "30px",
+                  width: "250px",
                 }}
               >
                 View all services
               </div>
             </div>
           );
+        })}
+      </div>
+      <div className="container-choice-bottom">
+        {services2.map((service2) => {
+          const { image, title, height, width, borderRadius } = service2 || {};
+          if (image) {
+            return (
+              <div
+                className="img-box"
+                style={{
+                  borderRadius: borderRadius ? borderRadius : "40px",
+                  overflow: "hidden",
+                }}
+              >
+                <img src={image} alt={title} />
+                {title && (
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "15px",
+                      left: "16px",
+                      background: "#0A0F17",
+                      color: "white",
+                      padding: "10px",
+                      borderRadius: "20px",
+                    }}
+                  >
+                    {title}
+                  </span>
+                )}
+              </div>
+            );
+          }
         })}
       </div>
     </div>

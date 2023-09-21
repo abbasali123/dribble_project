@@ -32,7 +32,7 @@ function App() {
     <PageScroller style={{ display: "flex", flexDirection: "column" }}>
       {sections.map((section, index) => {
         return (
-          <Page navTitle={`Num ${index + 1}`}>
+          <Page navTitle={`Num ${index + 1}`} classname="page-container">
             {!index && <Navbar />}
             {section}
           </Page>
