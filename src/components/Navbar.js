@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaKey } from 'react-icons/fa';
+import key from "../asset/key.svg";
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = React.useState(false);
@@ -12,33 +12,39 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo">{/* <Logo /> */}</div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          {/* <Hamburger /> */}
-        </div>
-        <div className={`nav-elements  ${showNavbar && "active"}`}>
-          <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/blogs">Blogs</NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects">Projects</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-          </ul>
-        </div>
+        <div className="menu-container">
+          <div className="logo">
+            {" "}
+            <img src="circleFour.png" />
+          </div>
 
-        <div style={{ background:"#84d7e9", padding: "10px 30px", borderRadius: 20 }}>Contact us</div>
+          <div className={`nav-elements  ${showNavbar && "active"}`}>
+            <ul>
+              <li>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/blogs">Blogs</NavLink>
+              </li>
+              <li>
+                <NavLink to="/projects">Projects</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about">About</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact">Contact</NavLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="nav-btn-wrapper">
+          <button className="contact-btn">Contact us</button>
 
-        <div style={{ color:"white", display:"flex", alignItems:"center", padding: 5 }}><FaKey size={26}/>  <span style={{ marginLeft: 15 }}>Login</span></div>
+          <button className="login-btn">
+            <img src={key} /> <span>Login</span>
+          </button>
+        </div>
       </div>
     </nav>
   );

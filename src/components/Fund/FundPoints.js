@@ -1,10 +1,16 @@
 import React from "react";
+import "./fund.scss";
 
 function FundPoints({ description }) {
   return (
-    <div style={{ display:"flex", flexDirection:"column", alignItems:"flex-start"}}>
-      <div><img src='circle.svg' height="55px"/></div>
-      <p style={{ margin:"20px 0 40px 5px" }} dangerouslySetInnerHTML={{ __html: description }}></p>
+    <div className="fund-points-box">
+      <div className="icon-box">
+        <img src="circle.svg" className="circle-img" />
+      </div>
+      <p
+        className="title-text"
+        dangerouslySetInnerHTML={{ __html: description }}
+      ></p>
     </div>
   );
 }
