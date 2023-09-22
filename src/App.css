@@ -84,22 +84,71 @@ p {
 }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding: 44px 110px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100%;
+  padding-bottom: 0px;
+  height: 100px;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.nav-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
 }
 
 .navbar {
-  height: 60px;
+  /* height: 60px; */
   background-color: #1f283d;
   position: relative;
 }
+.contact-btn {
+  background: #84d7e9;
+  padding: 16px 32px;
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  border: none;
+}
+.login-btn {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 32px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.login-btn img {
+  height: 20px;
+  width: 20px;
+  filter: invert(1);
+}
 
 .logo {
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .menu-icon {
