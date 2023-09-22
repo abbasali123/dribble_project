@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dribble_project/static/css/main.2d8bede4.css",
+    "main.js": "/dribble_project/static/js/main.64c52ce2.js",
+    "index.html": "/dribble_project/index.html",
+    "static/media/key.svg": "/dribble_project/static/media/key.6082489b052b1237c3f243a8ca955aa0.svg",
+    "main.2d8bede4.css.map": "/dribble_project/static/css/main.2d8bede4.css.map",
+    "main.64c52ce2.js.map": "/dribble_project/static/js/main.64c52ce2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d8bede4.css",
+    "static/js/main.64c52ce2.js"
+  ]
+}
