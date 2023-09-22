@@ -1,5 +1,6 @@
 import React from "react";
 import FundPoints from "./FundPoints";
+import { motion } from "framer-motion";
 import "./fund.scss";
 
 function Fund() {
@@ -7,9 +8,70 @@ function Fund() {
     <div className="fundContainer">
       <div className="funding-box" style={{}}>
         <div className="heading-box">
-          <h5 className="heading">
-            Support at every<span className="Step_heading"> Step</span>
-          </h5>
+          <div className="heading">
+            <motion.span
+              initial={{
+                opacity: 0,
+                y: "200%",
+                x: "-50%",
+                scale: 0,
+                left: 200,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                x: 0,
+                scale: 1,
+                left: 0,
+              }}
+              transition={{ duration: 0.5 }}
+              className="Step_heading1"
+            >
+              Support
+            </motion.span>
+            <motion.span
+              initial={{
+                opacity: 0,
+                y: "200%",
+                x: "-50%",
+                scale: 0,
+                left: -200,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                x: 0,
+                scale: 1,
+                left: 0,
+              }}
+              transition={{ duration: 0.75 }}
+              className="Step_heading2"
+            >
+              {" "}
+              at every
+            </motion.span>
+            <motion.span
+              initial={{
+                opacity: 0,
+                y: "200%",
+                x: "-50%",
+                scale: 0,
+                left: -200,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                x: 0,
+                scale: 1,
+                left: 0,
+              }}
+              transition={{ duration: 1 }}
+              className="Step_heading3"
+            >
+              {" "}
+              Step
+            </motion.span>
+          </div>
         </div>
 
         <div className="fundPoints-container">
@@ -21,6 +83,7 @@ function Fund() {
     </span>
     <span>We have a lot of bonuses!</span>
   `}
+            delay={1}
           />
           <FundPoints
             description={`
@@ -28,8 +91,9 @@ function Fund() {
             <span><br/>fund and share the link with your friends!</span>
             
           `}
+            delay={1.3}
           />
-          <button
+          <motion.button
             style={{
               width: "90%",
               height: "60px",
@@ -40,13 +104,28 @@ function Fund() {
               background: "#0B0F17",
               border: "1px solid #ff6476",
             }}
+            initial={{
+              opacity: 0,
+              // y: "200%",
+              // x: "-50%",
+              scale: 0,
+              left: -200,
+            }}
+            whileInView={{
+              opacity: 1,
+              // y: 0,
+              // x: 0,
+              scale: 1,
+              left: 0,
+            }}
+            transition={{ duration: 1.4 }}
           >
             Choose a fund
-          </button>
+          </motion.button>
         </div>
 
         <div className="img-container">
-          <img
+          <motion.img
             alt="bannerBallon"
             style={{
               width: "100%",
@@ -55,6 +134,9 @@ function Fund() {
               borderRadius: "10rem",
             }}
             src="bannerBallon.jpg"
+            initial={{ opacity: 0, y: "50%", scale: 0, left: -100 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1, left: 0 }}
+            transition={{ duration: 1.25 }}
           />
         </div>
       </div>
