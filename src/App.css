@@ -268,3 +268,10 @@ p {
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   /* top: 600px !important; */
 }
+.pointWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+}

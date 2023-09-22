@@ -26,12 +26,14 @@ input[type="date"]:valid::before {
   .About-innerBox {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     // height: 55vh;
+    height: 100%;
     color: white;
     padding: 44px 110px;
     background: #0b0f17;
     .contact-form {
-      height: 100%;
+      // height: 100%;
       width: 50%;
       display: flex;
       flex-direction: column;
@@ -113,7 +115,7 @@ input[type="date"]:valid::before {
   }
   .instructions-container {
     background: #0b0f17;
-    height: 100%;
+    // height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;

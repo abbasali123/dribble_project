@@ -19,13 +19,7 @@ function Banner() {
       </motion.div>
       <div className="right-side-banner">
         <motion.div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            // marginTop: 100,
-            width: "50%",
-            padding: "45px 0px",
-          }}
+          className="pointsContainer"
           initial={{ opacity: 0, x: "-100%", scale: 0, left: -200 }}
           whileInView={{ opacity: 1, x: 0, scale: 1, left: 0 }}
           transition={{ duration: 0.75 }}
@@ -42,7 +36,7 @@ function Banner() {
           <motion.img
             src="bannerBallon.jpg"
             height="700px"
-            initial={{ opacity: 0, y: "50%", scale: 0, left: -100 }}
+            initial={{ opacity: 0, y: "100%", scale: 1, left: 0 }}
             whileInView={{ opacity: 1, y: 0, scale: 1, left: 0 }}
             transition={{ duration: 1 }}
           />

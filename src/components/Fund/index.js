@@ -124,21 +124,15 @@ function Fund() {
           </motion.button>
         </div>
 
-        <div className="img-container">
+        <motion.div className="img-container">
           <motion.img
             alt="bannerBallon"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              borderRadius: "10rem",
-            }}
             src="bannerBallon.jpg"
-            initial={{ opacity: 0, y: "50%", scale: 0, left: -100 }}
+            initial={{ opacity: 0, y: "100%", scale: 1, left: 0 }}
             whileInView={{ opacity: 1, y: 0, scale: 1, left: 0 }}
-            transition={{ duration: 1.25 }}
+            transition={{ duration: 1 }}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
