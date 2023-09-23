@@ -93,7 +93,7 @@ function Services() {
                     }}
                     initial={{ opacity: 0, x: "-100%", left: 0 }}
                     whileInView={{ opacity: 1, x: 0, left: 32 }}
-                    transition={{ duration:1 }}
+                    transition={{ duration: 1 }}
                   >
                     {title}
                   </motion.span>

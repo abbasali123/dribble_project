@@ -5,11 +5,11 @@
   background-image: linear-gradient(#1f283d, #0b0f17);
   height: 100vh;
   color: white;
-  gap: 24px;
+  gap: 32px;
   padding: 44px 110px;
   &-top {
     display: flex;
-    gap: 16px;
+    gap: 32px;
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -23,7 +23,7 @@
       position: relative;
       text-align: left;
       padding: 20px;
-      cursor:pointer
+      cursor: pointer;
     }
   }
   &-bottom {
