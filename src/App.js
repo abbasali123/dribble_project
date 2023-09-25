@@ -26,10 +26,16 @@ function App() {
     };
   }, []);
 
-  const sections = [<Banner />, <Services />, <ExpertSection />,<Fund/> ,<Products/>];
+  const sections = [
+    <Banner />,
+    <Services />,
+    <ExpertSection />,
+    <Fund />,
+    <Products />,
+  ];
 
   return (
-    <PageScroller style={{ display: "flex", flexDirection: "column" }}>
+    <PageScroller classname="PageScrollerContainer">
       {sections.map((section, index) => {
         return (
           <Page navTitle={`Num ${index + 1}`} classname="page-container">

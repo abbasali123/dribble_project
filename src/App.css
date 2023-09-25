@@ -275,3 +275,11 @@ p {
   gap: 16px;
   margin-bottom: 32px;
 }
+.pointsContainer a,
+.fundPoints-container a {
+  color: #84d7e9;
+}
+.PageScrollerContainer {
+  display: flex;
+  flex-direction: column;
+}

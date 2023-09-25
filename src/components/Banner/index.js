@@ -13,9 +13,6 @@ function Banner() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="main-heading">Darcy's Insurance products</h1>
-        {/* <p style={{ margin: 0 }}>Darcy's</p>
-        <p style={{ margin: 0 }}>Insurance</p>
-        <p style={{ margin: 0 }}>products</p> */}
       </motion.div>
       <div className="right-side-banner">
         <motion.div
@@ -25,7 +22,7 @@ function Banner() {
           transition={{ duration: 0.75 }}
         >
           <Points
-            description={`<span>Our <a href="#" style="color: #84d7e9">plan</a> are saving policyholders 30% - 60% on premiums<span/>`}
+            description={`<span>Our <a href="#">plan</a> are saving policyholders 30% - 60% on premiums<span/>`}
           />
           <Points
             description={`We offer a choice of low dedactibles and include no cost value-added services.`}

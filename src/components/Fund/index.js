@@ -6,7 +6,7 @@ import "./fund.scss";
 function Fund() {
   return (
     <div className="fundContainer">
-      <div className="funding-box" style={{}}>
+      <div className="funding-box">
         <div className="heading-box">
           <div className="heading">
             <motion.span
@@ -77,7 +77,7 @@ function Fund() {
         <div className="fundPoints-container">
           <FundPoints
             description={`
-  <span>Participate in the <a href="#" style="color: #84d7e9">loyalty program</a>.</span>
+  <span>Participate in the <a href="#" >loyalty program</a>.</span>
     <span>
       Pay for the <br /> service online to get bonuses for our other <br />services.
     </span>
@@ -94,16 +94,7 @@ function Fund() {
             delay={1.3}
           />
           <motion.button
-            style={{
-              width: "90%",
-              height: "60px",
-              borderRadius: "35px",
-              cursor: "pointer",
-              color: "#ff6476",
-              fontSize: "25px",
-              background: "#0B0F17",
-              border: "1px solid #ff6476",
-            }}
+            className="ChoseFundBtn"
             initial={{
               opacity: 0,
               // y: "200%",

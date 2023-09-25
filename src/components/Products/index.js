@@ -8,7 +8,7 @@ function Products() {
   return (
     <div className="About-container">
       <div className="About-innerBox">
-        <div className="contact-form" style={{}}>
+        <div className="contact-form">
           <motion.h6
             className="heading"
             initial={{
@@ -55,7 +55,6 @@ function Products() {
               >
                 <label className="form-label">Enter the country</label>
                 <input
-                  style={{}}
                   className="form-control"
                   type="text"
                   placeholder="Australia"
@@ -109,7 +108,7 @@ function Products() {
             >
               Insurance services
             </motion.h6>
-            <motion.div
+            <motion.ul
               initial={{
                 opacity: 0,
                 scale: 0,
@@ -117,13 +116,12 @@ function Products() {
               whileInView={{ opacity: 1, y: 0, x: 0, scale: 1, left: 0 }}
               transition={{ duration: 1 }}
             >
-              <p className="service-text">
-                Medical expenses &nbsp; &nbsp; Family health insurance
-              </p>
-              <p className="service-text">
-                Vehicle damage &nbsp; Property loss &nbsp; Fire
-              </p>
-            </motion.div>
+              <li className="service-text">Medical expenses</li>
+              <li className="service-text">Family health insurance</li>
+              <li className="service-text">Property loss</li>
+              <li className="service-text">Fire</li>
+              <li className="service-text">Vehicle damage</li>
+            </motion.ul>
           </div>
           <div className="services-box">
             <motion.h6
@@ -139,8 +137,8 @@ function Products() {
             >
               Company
             </motion.h6>
-            <motion.p
-              className="service-text"
+
+            <motion.ul
               initial={{
                 opacity: 0,
                 scale: 0,
@@ -148,8 +146,22 @@ function Products() {
               whileInView={{ opacity: 1, y: 0, x: 0, scale: 1, left: 0 }}
               transition={{ duration: 1.25 }}
             >
-              About us &nbsp; Career &nbsp; Help &nbsp; FAQ &nbsp; Blog
-            </motion.p>
+              <li className="service-text">
+                <a href="#">About us</a>
+              </li>
+              <li className="service-text">
+                <a href="#">Career</a>
+              </li>
+              <li className="service-text">
+                <a href="#">Help</a>
+              </li>
+              <li className="service-text">
+                <a href="#">FAQ</a>
+              </li>
+              <li className="service-text">
+                <a href="#">Blog</a>
+              </li>
+            </motion.ul>
           </div>
           <div className="services-box">
             <motion.h6
@@ -165,7 +177,7 @@ function Products() {
             >
               Bonus
             </motion.h6>
-            <motion.p
+            <motion.ul
               className="service-text"
               initial={{
                 opacity: 0,
@@ -174,8 +186,16 @@ function Products() {
               whileInView={{ opacity: 1, y: 0, x: 0, scale: 1, left: 0 }}
               transition={{ duration: 1.5 }}
             >
-              Gift certificate &nbsp; Affiliate Program &nbsp; Trainings
-            </motion.p>
+              <li className="service-text">
+                <a href="#">Gift certificate</a>
+              </li>
+              <li className="service-text">
+                <a href="#">Affiliate Program</a>
+              </li>
+              <li className="service-text">
+                <a href="#">Trainings</a>
+              </li>
+            </motion.ul>
           </div>
         </div>
       </div>

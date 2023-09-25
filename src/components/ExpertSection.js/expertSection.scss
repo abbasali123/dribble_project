@@ -7,6 +7,10 @@
   color: white;
   padding: 44px 110px;
   gap: 70px;
+  .Heading-Sub-container {
+    display: flex;
+    flex-direction: column;
+  }
   .swiper-box {
     flex: 1;
     max-width: 60%;
