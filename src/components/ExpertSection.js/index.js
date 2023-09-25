@@ -205,7 +205,7 @@ function ExpertSection() {
           transition={{ duration: 1 }}
         />
 
-        <motion.div style={{ display: "flex", flexDirection: "column" }}>
+        <motion.div className="Heading-Sub-container">
           <motion.h3
             className="heading"
             initial={{ opacity: 0, x: "100%", y: "60%", scale: 0, left: -200 }}

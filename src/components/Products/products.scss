@@ -122,14 +122,27 @@ input[type="date"]:valid::before {
     gap: 48px;
   }
   .services-box {
+    max-width: 400px;
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      li {
+        list-style-type: none;
+      }
+    }
     .heading {
       font-size: 22px;
       line-height: 26px;
       font-weight: 600;
       margin-bottom: 16px;
     }
-    .service-text {
+    .service-text,
+    a {
       color: #808080;
+      text-decoration: none;
     }
   }
   .footer {

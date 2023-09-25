@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container">
         <div className="menu-container">
-          <div className="logo">
+          <a className="logo" href="#">
             {" "}
             <motion.img
               src="circleFour.png"
@@ -23,7 +23,7 @@ export default function Navbar() {
               whileInView={{ opacity: 1, rotate: 360, left: 0 }}
               transition={{ duration: 1 }}
             />
-          </div>
+          </a>
 
           <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>

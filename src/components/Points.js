@@ -13,10 +13,7 @@ function Points({ description }) {
           transition={{ duration: 1 }}
         />
       </div>
-      <p
-        // style={{ margin: "20px 0 80px 5px" }}
-        dangerouslySetInnerHTML={{ __html: description }}
-      ></p>
+      <p dangerouslySetInnerHTML={{ __html: description }}></p>
     </div>
   );
 }

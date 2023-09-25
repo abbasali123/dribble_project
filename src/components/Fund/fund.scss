@@ -7,6 +7,20 @@
   height: 100%;
   color: white;
   padding: 44px 110px;
+  .ChoseFundBtn {
+    // width: 90%;
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 35px;
+    cursor: pointer;
+    color: #ff6476;
+    font-size: 25px;
+    background: #0b0f17;
+    border: 1px solid #ff6476;
+  }
   .funding-box {
     display: flex;
     justify-content: space-between;

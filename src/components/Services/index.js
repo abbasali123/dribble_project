@@ -5,7 +5,7 @@ import "./service.scss";
 function Services() {
   const services = [
     {
-      image: "home.jpeg",
+      image: "home.jpg",
       title: "Home Insurance",
       width: "50%",
       height: "400px",
@@ -82,18 +82,10 @@ function Services() {
                 <img src={image} alt={title} />
                 {title && (
                   <motion.span
-                    style={{
-                      position: "absolute",
-                      bottom: "15px",
-                      left: "16px",
-                      background: "#0A0F17",
-                      color: "white",
-                      padding: "10px",
-                      borderRadius: "20px",
-                    }}
+                    className="TitleImage"
                     initial={{ opacity: 0, x: "-100%", left: 0 }}
                     whileInView={{ opacity: 1, x: 0, left: 32 }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 3 }}
                   >
                     {title}
                   </motion.span>
@@ -120,18 +112,7 @@ function Services() {
                 your insurance should be customized to fit your situation.
               </p>
 
-              <motion.div
-                style={{
-                  background: "#FF6476",
-                  padding: "10px 30px",
-                  position: "absolute",
-                  bottom: "15px",
-                  left: "16px",
-                  borderRadius: "30px",
-                  width: "90%",
-                  textAlign: "center",
-                }}
-              >
+              <motion.div className="TitleImage ViewAll">
                 View all services
               </motion.div>
             </motion.div>
@@ -144,11 +125,6 @@ function Services() {
           return (
             <motion.div
               className="img-box"
-              style={{
-                borderRadius: borderRadius ? borderRadius : "40px",
-                overflow: "hidden",
-                cursor: "pointer",
-              }}
               initial={{
                 opacity: 0,
                 x: "0",
@@ -167,15 +143,7 @@ function Services() {
               <img src={image} alt={title} />
               {title && (
                 <motion.span
-                  style={{
-                    position: "absolute",
-                    bottom: "15px",
-                    left: "16px",
-                    background: "#0A0F17",
-                    color: "white",
-                    padding: "10px",
-                    borderRadius: "20px",
-                  }}
+                  className="TitleImage"
                   initial={{ opacity: 0, x: "-100%", left: 0 }}
                   whileInView={{ opacity: 1, x: 0, left: 32 }}
                   transition={{ duration: 1 }}
